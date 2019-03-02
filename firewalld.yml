@@ -1,0 +1,8 @@
+- name: controll firewalld service
+  hosts: localhost
+  become: true
+  tasks:
+  - name: firewalld control
+    service:
+      name: firewalld
+      state: started
